@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MLCore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbu-wd-xE2">
+                                <rect key="frame" x="68.5" y="432.5" width="277" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="8xt-Sx-ZUf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0d-kR-EgE">
+                                <rect key="frame" x="111" y="527" width="192" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="q0d-kR-EgE" firstAttribute="top" secondItem="Wbu-wd-xE2" secondAttribute="bottom" constant="53.5" id="MZd-bG-1rY"/>
+                            <constraint firstItem="q0d-kR-EgE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Sor-Qc-5BU"/>
+                            <constraint firstItem="Wbu-wd-xE2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="T3b-Lh-0h6"/>
+                            <constraint firstItem="q0d-kR-EgE" firstAttribute="width" secondItem="Wbu-wd-xE2" secondAttribute="width" multiplier="0.693141" id="X96-ze-uxd"/>
+                            <constraint firstItem="Wbu-wd-xE2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oC9-yn-9Xd"/>
+                            <constraint firstItem="Wbu-wd-xE2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.669082" id="t1P-4h-kgO"/>
+                            <constraint firstItem="q0d-kR-EgE" firstAttribute="height" secondItem="Wbu-wd-xE2" secondAttribute="height" multiplier="0.97561" id="upz-9J-sp3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="confidense" destination="q0d-kR-EgE" id="aQH-Us-Fjk"/>
+                        <outlet property="outputTeller" destination="Wbu-wd-xE2" id="HxM-8V-zPM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
+        </scene>
+    </scenes>
+</document>
